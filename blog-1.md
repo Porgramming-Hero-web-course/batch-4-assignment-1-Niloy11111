@@ -31,7 +31,6 @@ const doctor2: Doctor = {
 ```
 
 <br/>
-
 #### So here in the type alias, gender and degree are flexible with different values because of using union types. We can assign either "female" or "male", both are acceptable, and other than these two, no value is allowed for gender.
 
 #### Intersection is used to combine multiple types into one, meaning a variable must have all the properties from the involved types. Intersection uses the ampersand ( & ) symbol. It ensures flexibility when we have two types declared, and in one variable, we want to include both types' properties explicitly. In such cases, we can use it.
@@ -43,7 +42,6 @@ type Vehicle = {
   name: string;
   brand: string;
 };
-
 type Info = {
   userExperience: number;
   userRating: number;
