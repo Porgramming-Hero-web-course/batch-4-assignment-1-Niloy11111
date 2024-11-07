@@ -36,8 +36,6 @@ const doctor2: Doctor = {
 
 #### Intersection is used to apply multiple types into one, meaning a variable must have all the properties that are involved in the types. Intersection uses this ( & ) symbol. It ensures flexibility to use if we have two types declared and in one variable, we want to have both types' properties included explicitly. Then we can use it.
 
-<br/>
-
 ### Some example
 
 ```typescript
@@ -58,7 +56,5 @@ const vehicleExperience: Experience = {
   userRating: 4.8,
 };
 ```
-
-<br/>
 
 #### Here, the Experience type has both Vehicle and Info type properties included, that's why we have to give all four properties in the vehicleExperience object.
