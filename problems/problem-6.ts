@@ -7,12 +7,19 @@
     email: string;
   }
 
-  function updateProfile(myPrfile: Profile, value: Partial<Profile>): Profile {
-    return { ...myPrfile, ...value };
+  function updateProfile(
+    myProfile: Profile,
+    updatedValue: Partial<Profile>
+  ): Profile {
+    return { ...myProfile, ...updatedValue };
   }
 
-  // const myProfile = { name: "Alice", age: 25, email: "alice@example.com" };
-  // console.log(updateProfile(myProfile, { age: 24 }));
+  const myProfile: Profile = {
+    name: "Alice",
+    age: 25,
+    email: "alice@example.com",
+  };
+  console.log(updateProfile(myProfile, { age: 55 }));
 
   //
 }

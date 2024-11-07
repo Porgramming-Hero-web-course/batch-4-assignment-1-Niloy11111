@@ -1,17 +1,12 @@
 {
   //
 
-  type Person = {
-    name: string;
-    age: number;
-  };
+  function getProperty<T, K extends keyof T>(person: T, key: K): T[K] {
+    return person[key];
+  }
 
-  const getProperty = <P, N extends keyof P>(person: P, name: N): P[N] => {
-    return person[name];
-  };
-
-  const person: Person = { name: "Alice", age: 30 };
-  console.log(getProperty(person, "name"));
+  const person = { name: "Alice", age: 30 };
+  console.log(getProperty(person, "age"));
 
   //
 }

@@ -15,6 +15,7 @@
     getCarAge() {
       const currentYear = new Date().getFullYear();
       if (this.year < currentYear) {
+        console.log(currentYear - this.year);
         return currentYear - this.year;
       } else {
         return "Invalid Input";
@@ -22,8 +23,8 @@
     }
   }
 
-  // const car = new Car("Honda", "Civic", 2081);
-  // console.log(car.getCarAge());
+  const car = new Car("Honda", "Civic", 2018);
+  car.getCarAge();
 
   //
 }
