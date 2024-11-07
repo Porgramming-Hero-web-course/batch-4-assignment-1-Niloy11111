@@ -14,12 +14,12 @@
     return { ...myProfile, ...updatedValue };
   }
 
-  const myProfile: Profile = {
-    name: "Alice",
-    age: 25,
-    email: "alice@example.com",
-  };
-  console.log(updateProfile(myProfile, { age: 55 }));
+  // const myProfile: Profile = {
+  //   name: "Alice",
+  //   age: 25,
+  //   email: "alice@example.com",
+  // };
+  // console.log(updateProfile(myProfile, { age: 55 }));
 
   //
 }

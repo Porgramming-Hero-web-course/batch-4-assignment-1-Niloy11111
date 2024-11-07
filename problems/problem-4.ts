@@ -30,12 +30,12 @@
     }
   }
 
-  const circleArea = calculateShapeArea({
-    shape: "circle",
-    radius: 5,
-  });
+  // const circleArea = calculateShapeArea({
+  //   shape: "circle",
+  //   radius: 5,
+  // });
 
-  console.log(circleArea);
+  // console.log(circleArea);
 
   //
 }
