@@ -1,14 +1,10 @@
-## The significance of union and intersection types in Typescript.
+## The significance of union and intersection types in Typescript
 
-<br/>
-### In TypeScript union and intersection is very powerfull in the sense of handling type precisely which helps us write cooler code.
+### In TypeScript union and intersection are very powerful in the sense of handling types precisely, which helps us write cooler code.
 
-<br/>
+### A union type can let a variable hold different types of values. It does this by using this symbol ( | ) between types. Often, we need to declare a variable with dynamic types, meaning its type can be A type and it can also be B type depending on the situation. Then we can use this.
 
-#### A union type can let a variable to holds different types of values.Its do this by using this symbol ( | ) between types.Often we needs to declare a variable to be dynamic types like its types can be A type and it also can be B type depend on the situation wise,then we can use this.
-
-<br/>
-#### some example
+### Some example
 
 ```typescript
 type Doctor = {
@@ -35,12 +31,14 @@ const doctor2: Doctor = {
 ```
 
 <br/>
-#### so here in the type alias gender and degree is flexible of different values because of using union types.we can give female or male both are acceptable and othere than these two no value is accetabl ein gender.
 
-### Intersection use to apply multiple types into one,meaning a variable must have all the properties that was involved in the types.Intersection use by this ( & ) this symbol.It ensure flexible to use if we have two type declared and in one variable we want to have both two type properties included explicity then we can use it.
+#### So here in the type alias, gender and degree are flexible with different values because of using union types. We can give either female or male, both are acceptable, and other than these two, no value is acceptable in gender.
+
+### Intersection is used to apply multiple types into one, meaning a variable must have all the properties that are involved in the types. Intersection uses this ( & ) symbol. It ensures flexibility to use if we have two types declared and in one variable, we want to have both types' properties included explicitly. Then we can use it.
 
 <br/>
-#### some example
+
+### Some example
 
 ```typescript
 type Vehicle = {
@@ -62,4 +60,5 @@ const vehicleExperience: Experience = {
 ```
 
 <br/>
-#### here the Experience type has both Vehicle and Info type properties inclueded thats why we have to give all four properties in the vehicleExperience object
+
+#### Here, the Experience type has both Vehicle and Info type properties included, that's why we have to give all four properties in the vehicleExperience object.
