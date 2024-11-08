@@ -7,8 +7,8 @@
     return occurneces;
   }
 
-  // const problem3 = countWordOccurrences("I love typescript", "success");
-  // console.log(problem3);
+  const problem3 = countWordOccurrences("I love typescript", "typescript");
+  console.log(problem3);
 
   //
 }

@@ -31,11 +31,12 @@ const doctor2: Doctor = {
 ```
 
 <br/>
+
 #### So here in the type alias, gender and degree are flexible with different values because of using union types. We can assign either "female" or "male", both are acceptable, and other than these two, no value is allowed for gender.
 
 #### An intersection type is used to combine multiple types into one, meaning a variable must have all the properties from the types involved. It uses the ampersand (&) symbol to join them. This ensures that a variable includes the properties of each type, making it possible to work with values that must satisfy all the criteria of multiple types at once. It's useful when you want a variable to explicitly include every property from both types, giving you more flexibility when combining them.
 
-### Some example
+### Some examples
 
 ```typescript
 type Vehicle = {
@@ -56,3 +57,11 @@ const vehicleExperience: Experience = {
 ```
 
 #### Here, the Experience type has both Vehicle and Info type properties included, which is why we need to provide all four properties in the vehicleExperience object.
+
+#### Key Benefits of Using Union and Intersection Types
+
+1. **Better Type Flexibility:** Lets variables hold different types of data easily.
+2. **Clear Structure:** Makes sure all required properties are included when combining types.
+3. **Error Handling:** Helps catch mistakes related to types during development.
+4. **Readable Code:** Makes complex type definitions simpler and clearer.
+5. **Adaptable Code:** Allows code to easily adjust and scale for different needs.

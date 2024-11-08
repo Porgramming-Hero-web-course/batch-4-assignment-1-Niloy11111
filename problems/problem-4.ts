@@ -12,13 +12,19 @@
   };
 
   function calculateShapeArea(input: Circle | Rectangle): number | string {
-    if ("radius" in input && input.shape === "circle") {
+    if (
+      "radius" in input &&
+      !("width" in input) &&
+      !("height" in input) &&
+      input.shape === "circle"
+    ) {
       const radius = (input as Circle).radius;
       const area = Math.PI * radius * radius;
       return parseFloat(area.toFixed(2));
     } else if (
       "width" in input &&
       "height" in input &&
+      !("radius" in input) &&
       input.shape === "rectangle"
     ) {
       const width = (input as Rectangle).width;
@@ -30,12 +36,12 @@
     }
   }
 
-  // const circleArea = calculateShapeArea({
-  //   shape: "circle",
-  //   radius: 5,
-  // });
+  const circleArea = calculateShapeArea({
+    shape: "circle",
+    radius: 5,
+  });
 
-  // console.log(circleArea);
+  console.log(circleArea);
 
   //
 }
